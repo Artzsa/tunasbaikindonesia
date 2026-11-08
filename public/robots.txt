@@ -4,3 +4,5 @@ Allow: /
 # Lapisan tambahan; file/folder ini seharusnya tidak pernah berada di deploy root.
 Disallow: /AGENTS.md
 Disallow: /docs/
+
+Sitemap: https://tunasbaikindonesia.org.id/sitemap.xml
