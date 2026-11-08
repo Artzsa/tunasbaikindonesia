@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Lapisan tambahan; file/folder ini seharusnya tidak pernah berada di deploy root.
+Disallow: /AGENTS.md
+Disallow: /docs/

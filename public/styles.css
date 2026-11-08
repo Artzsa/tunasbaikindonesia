@@ -1424,6 +1424,25 @@ body.nav-open .menu-toggle span::after {
   color: var(--muted);
 }
 
+/* ---------- 404 ---------- */
+
+.error-page {
+  padding-block: var(--section-y);
+}
+
+.error-page .eyebrow {
+  margin-bottom: 1.25rem;
+}
+
+.error-page .display {
+  max-width: 14ch;
+  margin-bottom: 1.5rem;
+}
+
+.error-page .lead {
+  max-width: 48ch;
+}
+
 /* ---------- Lightbox ---------- */
 
 .lightbox {
