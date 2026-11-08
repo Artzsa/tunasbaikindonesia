@@ -1,0 +1,20 @@
+# Dependensi
+node_modules/
+
+# Dokumen internal - jangan pernah di-deploy / dipublikasikan
+AGENTS.md
+docs/internal/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Sistem operasi & editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log & cache
+*.log
+.cache/
