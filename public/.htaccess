@@ -23,6 +23,10 @@ AddDefaultCharset UTF-8
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+  # Satukan www ke domain utama agar URL konsisten dengan canonical.
+  RewriteCond %{HTTP_HOST} ^www\.tunasbaikindonesia\.org\.id$ [NC]
+  RewriteRule ^ https://tunasbaikindonesia.org.id%{REQUEST_URI} [L,R=301]
+
   # Jangan pernah menyajikan file/folder internal jika ikut terunggah
   RewriteRule (^|/)\.git - [F,L]
   RewriteRule ^docs/ - [F,L]
